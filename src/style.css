@@ -11,7 +11,7 @@
   --maxWidth-3xl: 48rem;
   --maxWidth-4xl: 56rem;
   --maxWidth-full: "100%";
-  --maxWidth-wrapper: var(--maxWidth-2xl);
+  --maxWidth-wrapper: var(--maxWidth-4xl);
   --spacing-px: "1px";
   --spacing-0: 0;
   --spacing-1: 0.25rem;
@@ -289,6 +289,7 @@ a:focus {
 .bio {
   display: flex;
   margin-bottom: var(--spacing-16);
+  align-items: center;
 }
 
 .bio p {
@@ -296,9 +297,10 @@ a:focus {
 }
 
 .bio-avatar {
-  margin-right: var(--spacing-4);
+  margin-right: var(--spacing-6);
   margin-bottom: var(--spacing-0);
   min-width: 50px;
+  min-height: 50px;
   border-radius: 100%;
 }
 
@@ -319,6 +321,49 @@ a:focus {
   margin-bottom: var(--spacing-8);
 }
 
+.navbar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar_logo h4 {
+  margin: 5px 0px;
+}
+
+.navbar_logo h6 {
+  margin: 5px 0px;
+}
+
+.navbar nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin: 0px;
+}
+
+.navbar nav ul li {
+  margin: 0 15px;
+}
+
+picture {
+  line-height: 0%;
+}
+
+.logo_ant {
+  height: 60px;
+  width: 60px;
+  border-radius: 20%;
+  margin: 10px;
+}
 /* Media queries */
 
 @media (max-width: 42rem) {

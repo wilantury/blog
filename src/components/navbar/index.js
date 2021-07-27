@@ -24,7 +24,7 @@ const Navbar = ()=>{
                 </div>
             </Link>
             <nav>
-                <ul>
+                <ul className="links-nav">
                     {
                         links.map(link => <li>{link}</li>)
                     }

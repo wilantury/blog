@@ -1,0 +1,11 @@
+@keyframes fadeIn{
+    0% {
+        filter: blur(1px);
+        opacity: 0.5;
+    }
+
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
